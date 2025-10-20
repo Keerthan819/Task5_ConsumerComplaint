@@ -6,14 +6,14 @@
 ---
 
 ## Task Description
-This task performs text classification on the Consumer Complaint database to classify complaints into 4 categories:
+This task performs **text classification** on the Consumer Complaint Database. The goal is to classify consumer complaints into the following categories:
 
 0. Credit reporting, repair, or other  
 1. Debt collection  
 2. Consumer Loan  
 3. Mortgage  
 
-The goal is to preprocess complaint text, extract features, train multiple models, evaluate them, and predict new complaints.
+The task involves preprocessing the complaint text, feature extraction, training multiple machine learning models, evaluating their performance, and predicting new complaints.
 
 ---
 
@@ -23,21 +23,31 @@ The goal is to preprocess complaint text, extract features, train multiple model
 ---
 
 ## Steps Followed
-1. **Load Dataset**: Selected `Product` and `Consumer complaint narrative` columns, removed missing values.  
-2. **Exploratory Data Analysis (EDA)**: Plotted category distribution to understand dataset balance.  
-3. **Text Preprocessing**: Converted text to lowercase, removed punctuation, and removed stopwords.  
-4. **Feature Engineering**: Applied TF-IDF vectorization to convert text into numerical features.  
-5. **Model Selection**: Trained three models:
-   - Naive Bayes  
-   - Logistic Regression  
-   - Random Forest  
-6. **Model Comparison**: Checked accuracy of all models and selected the best-performing one.  
-7. **Model Evaluation**: Generated classification report and confusion matrix for the best model.  
-8. **Prediction**: Created a function to classify new complaints into one of the 4 categories.
+1. **Load Dataset:** Selected relevant columns (`Product` and `Consumer complaint narrative`) and removed missing values.  
+2. **Exploratory Data Analysis (EDA):**  
+   - Plotted the distribution of complaint categories to check class balance.  
+3. **Text Preprocessing:**  
+   - Converted text to lowercase  
+   - Removed punctuation  
+   - Removed stopwords using NLTK  
+4. **Feature Engineering:**  
+   - Used TF-IDF vectorization to convert text into numerical features.  
+5. **Model Selection & Training:**  
+   - Trained three classifiers:  
+     - Naive Bayes  
+     - Logistic Regression  
+     - Random Forest  
+6. **Model Comparison:**  
+   - Compared accuracy of all models and selected the best-performing model.  
+7. **Model Evaluation:**  
+   - Generated classification report with Precision, Recall, F1-score  
+   - Plotted confusion matrix  
+8. **Prediction:**  
+   - Created a function `predict_complaint(text)` to classify new complaints into one of the 4 categories.  
 
 ---
 
 ## How to Run
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/Task5_ConsumerComplaint_TextClassification_Keerthan.git
+git clone https://github.com/Keerthan819/Task5_ConsumerComplaint.git
