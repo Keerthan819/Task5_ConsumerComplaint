@@ -48,6 +48,13 @@ The task involves preprocessing the complaint text, feature extraction, training
 ---
 
 ## How to Run
-1. Clone the repository:
+
+1. **Download the Notebook**
+   - Download or fork the repository from GitHub:  
+     [Task5_ConsumerComplaint](https://github.com/Keerthan819/Task5_ConsumerComplaint)
+
+2. **Install Required Libraries**
+   - Make sure you have Python 3.x installed.
+   - Install the required Python packages:
 ```bash
-git clone https://github.com/Keerthan819/Task5_ConsumerComplaint.git
+pip install -r requirements.txt
