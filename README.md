@@ -55,6 +55,4 @@ The task involves preprocessing the complaint text, feature extraction, training
 
 2. **Install Required Libraries**
    - Make sure you have Python 3.x installed.
-   - Install the required Python packages:
-```bash
-pip install -r requirements.txt
+   - Install the required Python packages
